@@ -1,12 +1,13 @@
 ;;; auto-complete ---------------------------------
-;; Get auto-complete.el ver 1.4.0 from github using command line.
+;; Get the auto-complete.el ver 1.4.0
+;; from the github using command line tools.
 ;;
 ;; cd ~/.emacs.d/elisp
 ;; git clone https://github.com/auto-complete/auto-complete.git
 ;; cd auto-complete
 ;; git submodule update --init
 ;;
-;; You can also get auto-complete.el from MELPA package manager.
+;; You can also get the auto-complete.el from the MELPA package manager.
 
 (defvar ac-dir (expand-file-name "~/.emacs.d/elisp/auto-complete"))
 (add-to-list 'load-path ac-dir)
@@ -18,8 +19,8 @@
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
 
-(setq ac-use-menu-map t) ;; C-n / C-p で選択
-(setq ac-auto-show-menu 0.3) ;; default 0.8 second
+(setq ac-use-menu-map t) ;; Move selective candidates by [C-n] / [C-p]
+(setq ac-auto-show-menu 0.3) ;; Popup candidates delay.
 
 
 
